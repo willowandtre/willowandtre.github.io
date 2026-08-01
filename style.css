@@ -2,7 +2,107 @@
     --primary: #2c3e35;      /* Deep forest green */
     --accent: #d4a373;       /* Warm tan/gold */
     --background: #fefae0;   /* Creamy light background */
-    --text: #333333;
+    --text: #333333;/* ==========================================================================
+   Willow and Tre - Custom Embroidery & Printing Stylesheet
+   ========================================================================== */
+
+/* Design Tokens & Theme Colors */
+:root {
+    --primary: #1e3a2b;       /* Forest green matching your logo mark */
+    --primary-hover: #14281e;
+    --accent: #d4a373;        /* Warm tan / accent gold */
+    --bg-main: #fdfbf7;       /* Soft linen background */
+    --bg-alt: #f3f0e6;        /* Slightly darker section background */
+    --text-dark: #222222;
+    --text-muted: #555555;
+    --card-bg: #ffffff;
+    --font-heading: 'Playfair Display', serif;
+    --font-body: 'Montserrat', sans-serif;
+}
+
+/* Reset & Universal Rules */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: var(--font-body);
+    color: var(--text-dark);
+    background-color: var(--bg-main);
+    line-height: 1.6;
+}
+
+/* ==========================================================================
+   Navigation Bar & Logo
+   ========================================================================== */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 8%;
+    background-color: #ffffff;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.logo-link {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+}
+
+/* Specific Logo Sizing */
+.nav-logo {
+    height: 60px;
+    width: auto;
+    max-height: 60px;
+    object-fit: contain;
+    transition: transform 0.2s ease;
+}
+
+.nav-logo:hover {
+    transform: scale(1.02);
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: var(--text-dark);
+    font-weight: 600;
+    font-size: 0.95rem;
+    transition: color 0.2s ease;
+}
+
+.nav-links a:hover {
+    color: var(--accent);
+}
+
+/* Buttons */
+.cta-btn, .btn-nav {
+    background-color: var(--primary);
+    color: #ffffff !important;
+    padding: 10px 22px;
+    border-radius: 4px;
+    text-decoration: none;
+    font-weight: 600;
+    display: inline-block;
+    border: none;
+    cursor: pointer;
+    transition: background
     --card-bg: #ffffff;
     --font-heading: 'Playfair Display', serif;
     --font-body: 'Montserrat', sans-serif;
