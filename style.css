@@ -359,3 +359,22 @@ footer {
     object-fit: cover; /* Crops image proportionally to fill the box */
     display: block;
 }
+
+/* File Upload Input Styling */
+.file-input {
+    padding: 10px;
+    background-color: var(--bg-light);
+    border: 1px dashed var(--border-color);
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.file-input:focus {
+    border-color: var(--primary);
+}
+
+.file-help {
+    font-size: 0.75rem;
+    color: var(--text-muted);
+    margin-top: 4px;
+}
