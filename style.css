@@ -332,3 +332,28 @@ footer {
     color: var(--text-dark);
     font-size: 1.05rem;
 }
+/* Constrain Gallery Grid */
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 250px)); /* Limits max card width */
+    gap: 20px;
+    justify-content: center; /* Centers the row if items are few */
+    margin-top: 30px;
+}
+
+/* Fixed Height Container */
+.gallery-card {
+    background: #ffffff;
+    border-radius: 8px;
+    overflow: hidden;
+    border: 1px solid var(--border-color);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+}
+
+/* Standardized Photo Crop */
+.gallery-img {
+    width: 100%;
+    height: 180px; /* Adjust height to shrink or enlarge vertical size */
+    object-fit: cover; /* Crops image proportionally to fill the box */
+    display: block;
+}
