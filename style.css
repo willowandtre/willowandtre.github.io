@@ -312,3 +312,23 @@ footer {
         padding: 50px 6%;
     }
 }
+
+/* About Page Specific Layout */
+.about-container {
+    max-width: 800px;
+    margin: 0 auto;
+    line-height: 1.8;
+}
+
+.about-text h2 {
+    font-family: var(--font-heading);
+    color: var(--primary-dark);
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.about-text p {
+    margin-bottom: 18px;
+    color: var(--text-dark);
+    font-size: 1.05rem;
+}
